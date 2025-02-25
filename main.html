@@ -16,7 +16,7 @@
       <nav class="flex justify-around">
         <div><img src="assets/Group.png" alt=""></div>
         <div>
-          <h1 class="text-3xl font-bold">$4500</h1>
+          <h1 class="text-3xl font-bold">$ <span id="main-balance">4500</span></h1>
           <p class="border-2 border-gray-400 rounded p-1 ">Available Balance</p>
         </div>
         <div><button class="btn">logout</button></div>
@@ -24,45 +24,82 @@
       <section class="mt-10 p-5">
         <h1 class="text-4xl mb-2 font-bold">🔥 Welcome to Payooo!</h1>
         <p>Enjoy easy and convenient financial services with us. Cashout charge is low and</p>
-        <div class=" cards mt-10   grid grid-cols-3">
+        <div class=" cards mt-10   grid grid-cols-3 gap-5">
           <div class="box border-2 border-gray-300 rounded p-3  justify-center items-center  ">
-            <img src="assets/wallet1.png" alt="">
+            <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
             <p>Add Money</p>
           </div>
           <div class="box border-2 border-gray-300 rounded p-3  justify-center items-center  ">
-            <img src="assets/wallet1.png" alt="">
-            <p>Add Money</p>
+            <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+            <p class="text-center">Bonus</p>
+          </div>
+          <div class="box text-center border-2 border-gray-300 rounded p-3  justify-center items-center  ">
+            <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+            <p>Send money</p>
           </div>
           <div class="box border-2 border-gray-300 rounded p-3  justify-center items-center  ">
-            <img src="assets/wallet1.png" alt="">
-            <p>Add Money</p>
+            <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+            <p>transaction</p>
           </div>
           <div class="box border-2 border-gray-300 rounded p-3  justify-center items-center  ">
-            <img src="assets/wallet1.png" alt="">
-            <p>Add Money</p>
+            <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+            <p class="text-center">pay bill</p>
           </div>
           <div class="box border-2 border-gray-300 rounded p-3  justify-center items-center  ">
-            <img src="assets/wallet1.png" alt="">
-            <p>Add Money</p>
+            <img class="mx-auto w-8" src="assets/wallet1.png" alt="">
+            <p class="text-center">Add Money</p>
           </div>
-          <div class="box border-2 border-gray-300 rounded p-3  justify-center items-center  ">
-            <img src="assets/wallet1.png" alt="">
-            <p>Add Money</p>
+        </div>
+        <h1 class="text-5xl font-bold">Add money</h1>
+        <div class="">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+
+            <div class="text-center lg:text-left">
+
+
+            </div>
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <form class="card-body">
+                <legend>Select Bank</legend>
+                <select class="select select-bordered w-full max-w-xs">
+                  <option disabled selected>Select</option>
+                  <option valu="Bkash">Bkash</option>
+                  <option value="Nagad">nagad</option>
+                  <option value="dbbl">Dbbl</option>
+                </select>
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Acount number</span>
+                  </label>
+                  <input value="01301301301" id="acount-number" type="number" placeholder=" type acount number"
+                    class="input input-bordered" required />
+                </div>
+                <label class="label">
+                  <span class="label-text">Amount</span>
+                </label>
+                <input value="" id="amount-number" type="number" placeholder=" type acount number"
+                  class="input input-bordered" required />
+                <div value="1234" class="form-control">
+                  <label class="label">
+                    <span class="label-text">pin</span>
+                  </label>
+                  <input id="pin" type="text" placeholder="enter pin number" class="input input-bordered" required />
+                  <label class="label">
+                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                  </label>
+                </div>
+                <div class="form-control mt-6">
+                  <button id="add-money" class="btn btn-primary">Add money</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
     </header>
   </section>
 
-
-
-
-
-
-
-
-
-
+  <script src="add-money.js"></script>
 </body>
 
 </html>
